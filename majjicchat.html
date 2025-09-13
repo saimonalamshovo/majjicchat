@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MajjicChat: স্মার্ট চ্যাট, স্মার্ট টিমওয়ার্ক, ২৪/৭ এআই কাস্টমার সাপোর্ট</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            background-color: #ECF1EF;
+            color: #132D40;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #ECF1EF 0%, #d8e0de 100%);
+        }
+        .primary-btn {
+            background-color: #F5842F;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .primary-btn:hover {
+            background-color: #C36524;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .secondary-btn {
+            background-color: transparent;
+            color: #132D40;
+            border: 2px solid #132D40;
+            transition: all 0.3s ease;
+        }
+        .secondary-btn:hover {
+            background-color: #132D40;
+            color: white;
+            transform: translateY(-2px);
+        }
+        .feature-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+        .stat-counter {
+            transition: all 0.5s ease;
+        }
+        .faq-item {
+            border-bottom: 1px solid #A39996;
+        }
+        .faq-item summary {
+            cursor: pointer;
+            outline: none;
+        }
+        .faq-item[open] summary {
+            color: #F5842F;
+        }
+        .comparison-table td, .comparison-table th {
+            border: 1px solid #d8e0de;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="sticky top-0 bg-white/80 backdrop-blur-md z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold" style="color: #132D40;">Majjic<span style="color: #F5842F;">Chat</span></h1>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#features" class="text-gray-600 hover:text-[#F5842F]">ফিচার</a>
+                <a href="#pricing" class="text-gray-600 hover:text-[#F5842F]">প্ল্যান</a>
+                <a href="#faq" class="text-gray-600 hover:text-[#F5842F]">FAQ</a>
+                <a href="#" class="primary-btn px-5 py-2 rounded-lg font-semibold">ফ্রি‑তে শুরু করুন</a>
+            </nav>
+            <button class="md:hidden text-3xl text-[#132D40]">&#9776;</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 data-aos="fade-up" class="text-4xl md:text-6xl font-bold leading-tight mb-4" style="color: #132D40;">স্মার্ট চ্যাট। স্মার্ট টিমওয়ার্ক। <br class="hidden md:block"> <span style="color: #F5842F;">২৪/৭ এআই কাস্টমার সাপোর্ট</span> - সব এক প্ল্যাটফর্মে।</h1>
+            <p data-aos="fade-up" data-aos-delay="200" class="text-lg md:text-xl max-w-4xl mx-auto mb-8 text-gray-700">MajjicChat আপনার ওয়েবসাইট, Facebook, Instagram, WhatsApp, ইমেইল সব চ্যানেলে হিউম্যান লাইক এআই রিপ্লাই, টিম ইনবক্স, টিকিটিং, নলেজবেস, রিটেনশন অটোমেশন ও মার্কেটিং চ্যাটবট দেয় - মিনিটেই সেটআপ, প্রথম দিন থেকেই রেজাল্ট।</p>
+            <div data-aos="fade-up" data-aos-delay="400" class="flex justify-center space-x-4">
+                <a href="#" class="primary-btn px-8 py-4 rounded-lg font-bold text-lg">ফ্রি‑তে শুরু করুন</a>
+                <a href="#" class="secondary-btn px-8 py-4 rounded-lg font-bold text-lg">৯০‑সেকেন্ড ডেমো দেখুন</a>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="600" class="mt-12">
+                <p class="text-gray-600 font-semibold">2,000+ বিজনেসের ভরসা</p>
+                <!-- Placeholder for logos -->
+                <div class="flex justify-center items-center space-x-8 mt-4 opacity-70">
+                    <span class="text-2xl font-bold">Client A</span>
+                    <span class="text-2xl font-bold">Client B</span>
+                    <span class="text-2xl font-bold">Client C</span>
+                    <span class="text-2xl font-bold">Client D</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold">প্রচলিত সাপোর্টের সমস্যাগুলো কি আপনার পরিচিত?</h2>
+                <p class="text-lg text-gray-600 mt-2">আপনার বিজনেসের গ্রোথ আটকে দিচ্ছে কোন সমস্যাগুলো?</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div data-aos="fade-right" class="feature-card p-6 text-center">
+                    <div class="text-5xl mb-4" style="color: #F5842F;">⏳</div>
+                    <h3 class="text-xl font-semibold mb-2">রেসপন্স লম্বা হলে</h3>
+                    <p class="text-gray-600">দেরি করে রিপ্লাই দিলে কাস্টমার আগ্রহ হারিয়ে ফেলে এবং অন্য কোথাও চলে যায়।</p>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="200" class="feature-card p-6 text-center">
+                     <div class="text-5xl mb-4" style="color: #43ACA0;">🤯</div>
+                    <h3 class="text-xl font-semibold mb-2">একাধিক চ্যানেলের হ্যাসেল</h3>
+                    <p class="text-gray-600">সব চ্যানেলের মেসেজ আলাদা আলাদা, যা ম্যানেজ করা কঠিন এবং সময়সাপেক্ষ।</p>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="200" class="feature-card p-6 text-center">
+                    <div class="text-5xl mb-4" style="color: #C36524;">😩</div>
+                    <h3 class="text-xl font-semibold mb-2">একই প্রশ্নে বারবার টাইপ</h3>
+                    <p class="text-gray-600">টিম ক্লান্ত হয়, ভুল বাড়ে এবং প্রোডাক্টিভিটি কমে যায়।</p>
+                </div>
+                <div data-aos="fade-left" class="feature-card p-6 text-center">
+                    <div class="text-5xl mb-4" style="color: #132D40;">📉</div>
+                    <h3 class="text-xl font-semibold mb-2">রিটেনশন অটোমেশন নেই</h3>
+                    <p class="text-gray-600">পুরনো কাস্টমারদের সাথে সম্পর্ক না রাখায় তারা হারিয়ে যায়।</p>
+                </div>
+            </div>
+            <div data-aos="zoom-in" class="mt-12 text-center p-6 bg-red-100 text-red-800 rounded-lg max-w-3xl mx-auto">
+                <p class="text-2xl font-bold">ফলাফল: সেলস ড্রপ, CSAT কমে, খরচ বাড়ে।</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Solution Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold">MajjicChat: আপনার ওয়ান-স্টপ সল্যুশন</h2>
+                <p class="text-lg text-gray-600 mt-2">আমরা তিনটি শক্তিশালী পিলার দিয়ে আপনার বিজনেসের কাস্টমার সাপোর্ট বদলে দেই।</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div data-aos="fade-up" class="text-center p-6">
+                     <div class="text-6xl mb-4 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#43ACA0" viewBox="0 0 256 256"><path d="M224,128a96,96,0,0,1-96,96,40,40,0,0,1-32-16,40.12,40.12,0,0,1-8-24,40,40,0,0,1,80-16h8a8,8,0,0,0,0-16h-8a24,24,0,0,0-23.71,20,8,8,0,0,1-15,5.1,55.91,55.91,0,0,0-17.84-51.65A96,96,0,1,1,224,128Zm-40-28a12,12,0,1,0-12,12A12,12,0,0,0,184,100Zm-80,0a12,12,0,1,0-12,12A12,12,0,0,0,104,100Z"></path></svg></div>
+                    <h3 class="text-2xl font-semibold mb-2">AI Autopilot</h3>
+                    <p class="text-gray-600">হিউম্যান লাইক টোনে কনটেক্সট অনুযায়ী মেসেজের (টেক্সট, ইমেজ, ভয়েস) রিপ্লাই দেয়। মাল্টি-ল্যাঙ্গুয়েজ সাপোর্ট করে, যেন বিশ্বের যেকোনো প্রান্তের কাস্টমার আপনার আপনজন।</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" class="text-center p-6">
+                    <div class="text-6xl mb-4 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#F5842F" viewBox="0 0 256 256"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,16V72H40V56ZM40,200V88H216l.06,112Z"></path></svg></div>
+                    <h3 class="text-2xl font-semibold mb-2">Team Inbox & Ticketing</h3>
+                    <p class="text-gray-600">সব চ্যানেলের মেসেজ এখন এক ইনবক্সে। SLA, ম্যাক্রো, এবং ট্যাগিং সিস্টেমের মাধ্যমে টিমের কাজ সহজ করুন এবং কোনো কাস্টমারকে আর অপেক্ষায় রাখবেন না।</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400" class="text-center p-6">
+                    <div class="text-6xl mb-4 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#C36524" viewBox="0 0 256 256"><path d="M234.4,98.12,204.28,124a8,8,0,0,1-11.31-1.31L176,102.15V200a8,8,0,0,1-16,0V102.15l-17,20.54a8,8,0,0,1-12.62-10.46l30.12-36.27a8,8,0,0,1,12.62,0l30.12,36.27A8,8,0,0,1,234.4,98.12ZM96,56V153.85l-17-20.54a8,8,0,0,0-12.62,10.46l30.12,36.27a8,8,0,0,0,12.62,0l30.12-36.27a8,8,0,0,0-1.31-11.31,8,8,0,0,0-11.31,1.31L112,153.85V56a8,8,0,0,0-16,0Z"></path></svg></div>
+                    <h3 class="text-2xl font-semibold mb-2">Retention & Marketing Automation</h3>
+                    <p class="text-gray-600">সঠিক সময়ে সঠিক অফার, রি-অর্ডার রিমাইন্ডার, ক্যাম্পেইন, এবং ফলো-আপ পাঠিয়ে পুরনো কাস্টমারদের ফিরিয়ে আনুন এবং সেলস বাড়ান।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold">শুরু করা একদম সহজ</h2>
+                 <p class="text-lg text-gray-600 mt-2">মাত্র ৩টি সহজ ধাপে আপনার সাপোর্ট সিস্টেমকে অটোমেটেড করুন।</p>
+            </div>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                <!-- Step 1 -->
+                <div data-aos="zoom-in" class="flex items-center flex-col text-center">
+                    <div class="rounded-full bg-[#43ACA0] text-white w-24 h-24 flex items-center justify-center text-4xl font-bold mb-4">১</div>
+                    <h3 class="text-xl font-semibold">কানেক্ট করুন</h3>
+                    <p class="max-w-xs text-gray-600">Facebook, WhatsApp, Instagram, ইমেইল, ওয়েবচ্যাট এক ক্লিকে কানেক্ট করুন।</p>
+                </div>
+                <div class="hidden md:block border-t-4 border-dashed border-[#A39996] w-32 mt-[-5rem]"></div>
+                <!-- Step 2 -->
+                <div data-aos="zoom-in" data-aos-delay="200" class="flex items-center flex-col text-center">
+                    <div class="rounded-full bg-[#F5842F] text-white w-24 h-24 flex items-center justify-center text-4xl font-bold mb-4">২</div>
+                    <h3 class="text-xl font-semibold">ইম্পোর্ট করুন</h3>
+                    <p class="max-w-xs text-gray-600">আপনার FAQ, প্রোডাক্ট/পলিসি, এবং নলেজবেস থেকে তথ্য ইম্পোর্ট করুন।</p>
+                </div>
+                 <div class="hidden md:block border-t-4 border-dashed border-[#A39996] w-32 mt-[-5rem]"></div>
+                <!-- Step 3 -->
+                <div data-aos="zoom-in" data-aos-delay="400" class="flex items-center flex-col text-center">
+                    <div class="rounded-full bg-[#C36524] text-white w-24 h-24 flex items-center justify-center text-4xl font-bold mb-4">৩</div>
+                    <h3 class="text-xl font-semibold">অটোমেশন চালু করুন</h3>
+                    <p class="max-w-xs text-gray-600">এআই রিপ্লাই, রাউটিং, এবং মার্কেটিং ফ্লো চালু করে দিন।</p>
+                </div>
+            </div>
+            <div data-aos="fade-up" class="mt-12 text-center p-4 bg-teal-100 text-teal-800 rounded-lg max-w-2xl mx-auto font-semibold">
+                <p>৩০ সেকেন্ডে ইনস্টলেশন - কোনো জটিল কোডিং ছাড়াই!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Outcomes -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold">প্রথম দিন থেকেই ম্যাজিক্যাল রেজাল্ট</h2>
+                <p class="text-lg text-gray-600 mt-2">MajjicChat ব্যবহার করে আমাদের ক্লায়েন্টরা যে অবিশ্বাস্য ফলাফল পাচ্ছেন।</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div data-aos="flip-left" class="feature-card p-8 text-center">
+                    <h3 class="text-5xl font-bold mb-2 stat-counter" style="color: #43ACA0;" data-target="90">৭০-৯০%</h3>
+                    <p class="text-xl font-semibold">রেস্পন্স টাইম কমে</p>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="150" class="feature-card p-8 text-center">
+                    <h3 class="text-5xl font-bold mb-2 stat-counter" style="color: #F5842F;" data-target="75">৪০-৭৫%</h3>
+                    <p class="text-xl font-semibold">প্রশ্ন এআই হ্যান্ডেল করে</p>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="300" class="feature-card p-8 text-center">
+                    <h3 class="text-5xl font-bold mb-2 stat-counter" style="color: #C36524;" data-target="25">১৫-২৫%+</h3>
+                    <p class="text-xl font-semibold">CSAT বাড়ে</p>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="450" class="feature-card p-8 text-center">
+                    <h3 class="text-5xl font-bold mb-2 stat-counter" style="color: #132D40;" data-target="3">২-৩x</h3>
+                    <p class="text-xl font-semibold">Agent Productivity বাড়ে</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold">আপনার প্রয়োজনীয় সব ফিচার এক জায়গায়</h2>
+                <p class="text-lg text-gray-600 mt-2">কাস্টমার সাপোর্ট ও মার্কেটিং এর জন্য সেরা টুলস।</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Messaging -->
+                <div data-aos="fade-up" class="feature-card p-6">
+                    <h3 class="text-xl font-bold mb-3 text-[#F5842F]">Messaging</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Saved Replies</li>
+                        <li>Rich Messages (Buttons, Cards)</li>
+                        <li>File Attachments</li>
+                        <li>Voice Notes</li>
+                    </ul>
+                </div>
+                <!-- AI Features -->
+                <div data-aos="fade-up" data-aos-delay="100" class="feature-card p-6">
+                    <h3 class="text-xl font-bold mb-3 text-[#43ACA0]">AI Features</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Smart Reply (OpenAI+Dialogflow)</li>
+                        <li>Real-time Translation</li>
+                        <li>Spelling Correction & Message Rewrite</li>
+                        <li>Speech Recognition</li>
+                    </ul>
+                </div>
+                <!-- Team Management -->
+                <div data-aos="fade-up" data-aos-delay="200" class="feature-card p-6">
+                    <h3 class="text-xl font-bold mb-3 text-[#132D40]">Team Management</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Departments & Routing</li>
+                        <li>Real-time Queue</li>
+                        <li>Concurrent Chat Limits</li>
+                        <li>Agent Ratings</li>
+                    </ul>
+                </div>
+                 <!-- Reports -->
+                <div data-aos="fade-up" class="feature-card p-6">
+                    <h3 class="text-xl font-bold mb-3 text-[#C36524]">Reports</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Conversation Reports</li>
+                        <li>Agent Performance</li>
+                        <li>Customer Reports</li>
+                        <li>Article Views</li>
+                    </ul>
+                </div>
+                <!-- Knowledge Base -->
+                <div data-aos="fade-up" data-aos-delay="100" class="feature-card p-6">
+                    <h3 class="text-xl font-bold mb-3 text-[#F5842F]">Knowledge Base</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Multi-lingual Help Center</li>
+                        <li>Search Widget Integration</li>
+                        <li>Dedicated Help Center URL</li>
+                        <li>Categories & Subcategories</li>
+                    </ul>
+                </div>
+                <!-- Chatbot -->
+                <div data-aos="fade-up" data-aos-delay="200" class="feature-card p-6">
+                    <h3 class="text-xl font-bold mb-3 text-[#43ACA0]">Chatbot (AI + Human Blend)</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Human-like Conversations</li>
+                        <li>Seamless Human Takeover</li>
+                        <li>Multi-platform Integration</li>
+                        <li>Real-time Training</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="bg-white rounded-xl shadow-lg p-8 md:p-12 max-w-4xl mx-auto text-center" data-aos="zoom-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">আপনার ROI ক্যালকুলেট করুন</h2>
+                <p class="text-gray-600 mb-8">আপনার মাসিক ইনবক্স ভলিউম লিখুন, আমরা দেখাবো কত ঘন্টা সেভ ও সম্ভাব্য সেলস আপলিফট হবে।</p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                    <input type="number" id="inboxVolume" placeholder="যেমন: ৫০০০" class="text-lg w-full md:w-1/3 p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F5842F] focus:border-[#F5842F]">
+                    <button onclick="calculateROI()" class="primary-btn w-full md:w-auto px-8 py-3 rounded-lg font-bold text-lg">হিসাব করুন</button>
+                </div>
+                <div id="roiResult" class="mt-8 grid md:grid-cols-2 gap-6 text-left hidden">
+                    <div class="bg-green-100 p-6 rounded-lg">
+                        <p class="text-lg text-green-800">মাসিক সেভ হবে</p>
+                        <p id="hoursSaved" class="text-4xl font-bold text-green-900">... ঘন্টা</p>
+                    </div>
+                    <div class="bg-blue-100 p-6 rounded-lg">
+                        <p class="text-lg text-blue-800">সম্ভাব্য সেলস আপলিফট</p>
+                        <p id="salesUplift" class="text-4xl font-bold text-blue-900">... %</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Case Study -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6" data-aos="fade-up">
+            <div class="bg-[#132D40] text-white rounded-xl p-8 md:p-12 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-2/3">
+                    <h4 class="text-sm font-bold uppercase tracking-widest mb-2 text-teal-300">কেস স্টাডি</h4>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">একটি ক্লায়েন্টের অবিশ্বাস্য সাফল্য</h2>
+                    <p class="text-gray-300 mb-6">আমাদের এক ফ্যাশন ব্র্যান্ড ক্লায়েন্ট মাসে প্রায় ১২,০০০ মেসেজ পেত। MajjicChat ব্যবহারের পর তাদের সাপোর্টের চিত্রটাই পাল্টে যায়।</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                        <div>
+                            <p class="text-4xl font-bold text-[#F5842F]">১৮ মি → ৩ মি</p>
+                            <p class="text-gray-400">গড় রিপ্লাই টাইম (FRT)</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-bold text-[#43ACA0]">৩.৯ → ৪.৬</p>
+                            <p class="text-gray-400">কাস্টমার সন্তুষ্টি (CSAT)</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-bold text-[#F5842F]">১৪%</p>
+                            <p class="text-gray-400">উইন-ব্যাক ফ্লোতে রি-অর্ডার</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/3 text-center">
+                    <img src="https://placehold.co/300x300/ECF1EF/132D40?text=Client+Logo" alt="Client Logo" class="rounded-full mx-auto border-4 border-[#43ACA0]">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Plans & Pricing -->
+    <section id="pricing" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold">আপনার প্রয়োজন অনুযায়ী প্ল্যান বেছে নিন</h2>
+                <p class="text-lg text-gray-600 mt-2">ছোট বা বড়, যেকোনো সাইজের বিজনেসের জন্য আমাদের সল্যুশন আছে।</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+                <!-- Starter -->
+                <div data-aos="fade-up" class="feature-card p-8">
+                    <h3 class="text-2xl font-bold mb-2">Starter</h3>
+                    <p class="text-gray-500 mb-6">ছোট টিমের জন্য সেরা</p>
+                    <p class="text-5xl font-bold mb-6">৳X<span class="text-lg font-normal">/মাস</span></p>
+                    <ul class="space-y-3 mb-8 text-gray-700">
+                        <li>✔️ বেসিক AI Reply</li>
+                        <li>✔️ ২ টি চ্যানেল ইন্টিগ্রেশন</li>
+                        <li>✔️ বেসিক রিপোর্টিং</li>
+                        <li>✔️ ৫০০ কন্টাক্টস</li>
+                    </ul>
+                    <a href="#" class="secondary-btn w-full block text-center font-bold py-3 rounded-lg">শুরু করুন</a>
+                </div>
+                <!-- Pro (Featured) -->
+                <div data-aos="fade-up" data-aos-delay="100" class="feature-card p-8 border-4 border-[#F5842F] relative">
+                    <p class="absolute top-0 -translate-y-1/2 bg-[#F5842F] text-white px-4 py-1 rounded-full font-semibold">সবচেয়ে জনপ্রিয়</p>
+                    <h3 class="text-2xl font-bold mb-2">Pro</h3>
+                    <p class="text-gray-500 mb-6">গ্রোয়িং বিজনেসের জন্য</p>
+                    <p class="text-5xl font-bold mb-6">৳Y<span class="text-lg font-normal">/মাস</span></p>
+                    <ul class="space-y-3 mb-8 text-gray-700">
+                        <li>✔️ মাল্টি-চ্যানেল সাপোর্ট</li>
+                        <li>✔️ রিটেনশন অটোমেশন</li>
+                        <li>✔️ নলেজবেস</li>
+                        <li>✔️ অ্যাডভান্সড রিপোর্টিং</li>
+                        <li>✔️ ৫০০০ কন্টাক্টস</li>
+                    </ul>
+                    <a href="#" class="primary-btn w-full block text-center font-bold py-3 rounded-lg">ফ্রি ট্রায়াল নিন</a>
+                </div>
+                <!-- Business -->
+                <div data-aos="fade-up" data-aos-delay="200" class="feature-card p-8">
+                    <h3 class="text-2xl font-bold mb-2">Business</h3>
+                    <p class="text-gray-500 mb-6">বড় প্রতিষ্ঠানের জন্য</p>
+                    <p class="text-5xl font-bold mb-6">৳Z<span class="text-lg font-normal">/মাস</span></p>
+                    <ul class="space-y-3 mb-8 text-gray-700">
+                        <li>✔️ সকল প্রো ফিচার</li>
+                        <li>✔️ RBAC ও SSO</li>
+                        <li>✔️ Dedicated Success Manager</li>
+                        <li>✔️ কাস্টম ইন্টিগ্রেশন</li>
+                        <li>✔️ আনলিমিটেড কন্টাক্টস</li>
+                    </ul>
+                    <a href="#" class="secondary-btn w-full block text-center font-bold py-3 rounded-lg">যোগাযোগ করুন</a>
+                </div>
+            </div>
+            <p class="text-center mt-8 text-gray-600">কোনো ক্রেডিট কার্ড ছাড়াই ১৪ দিনের ফ্রি ট্রায়াল শুরু করুন।</p>
+        </div>
+    </section>
+
+    <!-- Integrations -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold mb-6">আপনার পছন্দের টুলসের সাথে সহজে ইন্টিগ্রেট করুন</h3>
+            <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 opacity-70">
+                <span class="text-xl font-bold">Shopify</span>
+                <span class="text-xl font-bold">WooCommerce</span>
+                <span class="text-xl font-bold">Zapier</span>
+                <span class="text-xl font-bold">Gmail</span>
+                <span class="text-xl font-bold">Slack</span>
+                <span class="text-xl font-bold">Messenger</span>
+                <span class="text-xl font-bold">Instagram</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold">আপনার মনে প্রশ্ন আছে?</h2>
+                <p class="text-lg text-gray-600 mt-2">আমরা কিছু সাধারণ প্রশ্নের উত্তর দিচ্ছি।</p>
+            </div>
+            <div class="space-y-4">
+                <details class="faq-item p-4 rounded-lg bg-white" data-aos="fade-up">
+                    <summary class="font-semibold text-lg">এআই কি ভুল উত্তর দেবে?</summary>
+                    <p class="mt-2 text-gray-700">আমাদের এআই সিস্টেমকে এমনভাবে ডিজাইন করা হয়েছে যেন এটি নির্ভুল উত্তর দেয়। তবে, কোনো জটিল বা অপরিচিত প্রশ্নের ক্ষেত্রে এটি স্বয়ংক্রিয়ভাবে কথোপকথনটি একজন হিউম্যান এজেন্টের কাছে হস্তান্তর করে (হিউম্যান এসকেলেশন), যাতে আপনার কাস্টমার সবসময় সঠিক সাপোর্ট পায়।</p>
+                </details>
+                <details class="faq-item p-4 rounded-lg bg-white" data-aos="fade-up" data-aos-delay="100">
+                    <summary class="font-semibold text-lg">বাংলায় কতটা ভালো কাজ করে?</summary>
+                    <p class="mt-2 text-gray-700">MajjicChat মাল্টিল্যাঙ্গুয়াল NLP (Natural Language Processing) সাপোর্ট করে, তাই এটি বাংলা ভাষায় অত্যন্ত সাবলীলভাবে কাজ করে। এটি শুধু বাংলা অক্ষরই বোঝে না, বরং ভাষার ধরণ, কনটেক্সট এবং আঞ্চলিকতাও বুঝতে পারে।</p>
+                </details>
+                <details class="faq-item p-4 rounded-lg bg-white" data-aos="fade-up" data-aos-delay="200">
+                    <summary class="font-semibold text-lg">ডেটা কতটা সিকিওর?</summary>
+                    <p class="mt-2 text-gray-700">আপনার এবং আপনার কাস্টমারের ডেটা সুরক্ষা আমাদের কাছে সর্বোচ্চ অগ্রাধিকার। আমরা এন্ড-টু-এন্ড এনক্রিপশন, GDPR কমপ্লায়েন্স, এবং অডিট লগের মতো আন্তর্জাতিক মানের নিরাপত্তা ব্যবস্থা ব্যবহার করি।</p>
+                </details>
+                <details class="faq-item p-4 rounded-lg bg-white" data-aos="fade-up" data-aos-delay="300">
+                    <summary class="font-semibold text-lg">সেটআপে কত সময় লাগে?</summary>
+                    <p class="mt-2 text-gray-700">মাত্র ৩০ সেকেন্ড! কোনো কোডিং বা টেকনিক্যাল জ্ঞানের প্রয়োজন নেই। আপনি খুব সহজেই আমাদের প্ল্যাটফর্মে সাইন আপ করে আপনার ওয়েবসাইট ও সোশ্যাল মিডিয়া চ্যানেলগুলো কানেক্ট করতে পারবেন।</p>
+                </details>
+                 <details class="faq-item p-4 rounded-lg bg-white" data-aos="fade-up" data-aos-delay="400">
+                    <summary class="font-semibold text-lg">আমার টিমের উপর কন্ট্রোল থাকবে?</summary>
+                    <p class="mt-2 text-gray-700">অবশ্যই। আমাদের সিস্টেমে এজেন্ট ওভাররাইড করার সুবিধা আছে, যার মাধ্যমে যেকোনো সময় আপনার এজেন্টরা এআই-এর কথোপকথনে হস্তক্ষেপ করতে পারে। এছাড়াও, রোল-বেসড অ্যাক্সেস কন্ট্রোল (RBAC) দিয়ে আপনি টিমের সদস্যদের জন্য নির্দিষ্ট অনুমতি সেট করতে পারবেন।</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 bg-teal-500/10">
+        <div class="container mx-auto px-6 text-center">
+            <h2 data-aos="zoom-in" class="text-4xl md:text-5xl font-bold mb-6">আজই MajjicChat চালু করুন - <br> প্রথম দিনেই রেজাল্ট দেখুন।</h2>
+            <div data-aos="zoom-in" data-aos-delay="200" class="flex justify-center space-x-4">
+                <a href="#" class="primary-btn px-8 py-4 rounded-lg font-bold text-lg">ফ্রি‑তে শুরু করুন</a>
+                <a href="#" class="secondary-btn px-8 py-4 rounded-lg font-bold text-lg">ডেমো দেখুন</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#132D40] text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold">MajjicChat</h3>
+                    <p class="text-gray-400 mt-2">স্মার্ট চ্যাট, স্মার্ট টিমওয়ার্ক।</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg">প্রোডাক্ট</h4>
+                    <ul class="mt-4 space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">ফিচার</a></li>
+                        <li><a href="#" class="hover:text-white">ইন্টিগ্রেশন</a></li>
+                        <li><a href="#" class="hover:text-white">প্ল্যান</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg">রিসোর্স</h4>
+                    <ul class="mt-4 space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">ব্লগ</a></li>
+                        <li><a href="#" class="hover:text-white">কেস স্টাডি</a></li>
+                        <li><a href="#" class="hover:text-white">হেল্প সেন্টার</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="font-semibold text-lg">কোম্পানি</h4>
+                    <ul class="mt-4 space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">আমাদের সম্পর্কে</a></li>
+                        <li><a href="#" class="hover:text-white">যোগাযোগ</a></li>
+                        <li><a href="#" class="hover:text-white">প্রাইভেসি পলিসি</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; 2024 MajjicChat. সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+
+        function calculateROI() {
+            const volume = document.getElementById('inboxVolume').value;
+            const resultDiv = document.getElementById('roiResult');
+            const hoursSavedEl = document.getElementById('hoursSaved');
+            const salesUpliftEl = document.getElementById('salesUplift');
+
+            if (volume && !isNaN(volume) && volume > 0) {
+                // Assumptions: 60% automation, 3 mins saved per automated chat, 1% sales uplift for every 1000 chats
+                const automatedChats = volume * 0.60;
+                const minutesSaved = automatedChats * 3;
+                const hoursSaved = (minutesSaved / 60).toFixed(1);
+                const salesUplift = (volume / 1000 * 1.5).toFixed(1);
+
+                hoursSavedEl.textContent = `${hoursSaved} ঘন্টা`;
+                salesUpliftEl.textContent = `${salesUplift}%`;
+                resultDiv.classList.remove('hidden');
+            } else {
+                resultDiv.classList.add('hidden');
+                alert("অনুগ্রহ করে একটি সঠিক সংখ্যা লিখুন।");
+            }
+        }
+    </script>
+</body>
+</html>
